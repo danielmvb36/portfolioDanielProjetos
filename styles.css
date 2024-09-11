@@ -1,0 +1,188 @@
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: color #383737;
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background: #232c35 ;
+}
+
+body.dark #sobre {
+    background: #232c35 ;
+    color:  rgb(168, 166, 166);
+}
+
+body.dark #projetos {
+    background: #232c35 ;
+    color: rgb(168, 166, 166);
+}
+
+body.dark #contato {
+    background: #232c35 ;
+    color:  rgb(168, 166, 166);
+}
+
+body.dark #nome {
+    background: #232c35 ;
+}
+
+body.dark #email {
+    background: #232c35 ;
+}
+
+body.dark #mensagem {
+    background: #232c35 ;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+ /*Label da caixinha para trocar entre o dark e light theme */
+.label {
+   background-color: #000000;
+   border-radius: 50px;
+   cursor: pointer;
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+   padding: 8px;
+   position: relative;
+   height: 6px;
+   width: 50px;
+
+   transform: scale(1.5);
+}
+/* Bolinha branca dentro do label*/
+.label .ball {
+   background-color: #ffffff;
+   border-radius: 50%; 
+   position: absolute;
+   top: 1px;
+   left: 9px;
+   height: 14px;
+   width: 15px;
+   transform: translate(0px);
+   transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color:#f1c40f ;
+}
+
+.fa-sun {
+    color: #f1c40f;
+}
+
+header {
+    background: #333;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem 0;
+    background-color:#ffffff
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-shadow: 2px, 2px, 20px 
+}
+
+.projeto {
+    margin-bottom: 20px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+form button {
+    background: #333;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-shadow: #333;
+}
+
+form button:hover {
+    background: #333;;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+}
