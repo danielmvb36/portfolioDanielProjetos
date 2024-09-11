@@ -52,7 +52,7 @@ body.dark #mensagem {
 
  /*Label da caixinha para trocar entre o dark e light theme */
 .label {
-   background-color: #000000;
+   background-color: #3b3636;
    border-radius: 50px;
    cursor: pointer;
    display: flex;
@@ -94,6 +94,10 @@ header {
     background: #333;
     color: #ffffff;
     padding: 1rem 0;
+}
+
+.trocarCor {
+    
 }
 
 header .container {
@@ -138,7 +142,7 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #2e2b2b;
     padding-bottom: 10px;
     margin-bottom: 20px;
     text-shadow: 2px, 2px, 20px 
