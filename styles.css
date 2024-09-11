@@ -28,9 +28,43 @@ body.dark #projetos {
     color: rgb(168, 166, 166);
 }
 
+#sobre {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#projetos {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#contatoS {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    background-color: #8a8888;
+}
+
+#hContato {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
 body.dark #contato {
     background: #232c35 ;
     color:  rgb(168, 166, 166);
+    text-align: center;
 }
 
 body.dark #nome {
@@ -186,3 +220,4 @@ footer {
     padding: 1rem 0;
     background-color: #333;
 }
+
