@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background: color #383737;
-    transition: background 0.2s linear;
+    transition: background 0.0s linear;
 }
 
 body.dark {
