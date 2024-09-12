@@ -236,5 +236,7 @@ footer {
 #imagem-grupo {
     width: 20%;
     height: 20%;
-    position: center;
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
 }
