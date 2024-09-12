@@ -20,7 +20,8 @@ body.dark {
 
 body.dark #sobre {
     background: #232c35 ;
-    color:  rgb(168, 166, 166);
+    color:  rgb(168, 166, 166); 
+    
 }
 
 body.dark #projetos {
@@ -52,7 +53,7 @@ body.dark #mensagem {
 
  /*Label da caixinha para trocar entre o dark e light theme */
 .label {
-   background-color: #000000;
+   background-color: #3b3636;
    border-radius: 50px;
    cursor: pointer;
    display: flex;
@@ -60,8 +61,8 @@ body.dark #mensagem {
    justify-content: space-between;
    padding: 8px;
    position: relative;
-   height: 6px;
-   width: 50px;
+   height: 10px;
+   width: 60px;
 
    transform: scale(1.5);
 }
@@ -96,6 +97,10 @@ header {
     padding: 1rem 0;
 }
 
+.trocarCor {
+    
+}
+
 header .container {
     width: 80%;
     margin: 0 auto;
@@ -119,7 +124,6 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 15px;
-    
 }
 
 nav ul li a {
@@ -138,14 +142,22 @@ section {
 }
 
 h2 {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #2e2b2b;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    text-shadow: 2px, 2px, 20px 
+    text-shadow: 2px, 2px, 20px;
+    font-size: 5rem;
+    
+
+}
+
+#primeiro {
+    font-size: 50px;
 }
 
 .projeto {
     margin-bottom: 20px;
+
     
 }
 
@@ -156,6 +168,7 @@ form {
 
 form label {
     margin-bottom: 5px;
+    
     
 }
 
