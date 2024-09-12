@@ -83,11 +83,11 @@ body.dark #mensagem {
 }
 
 .fa-moon {
-    color:#f1c40f ;
+    color:#004ffa ;
 }
 
 .fa-sun {
-    color: #f1c40f;
+    color: #f1bb07;
 }
 
 header {
@@ -168,11 +168,14 @@ form input, form textarea {
 
 form button {
     background: #333;
+    width: 75px;
+    height: 50px;
     color: #ffffff;
-    border: none;
+    border-radius: 20px;
     padding: 10px;
     cursor: pointer;
     text-shadow: #333;
+    display: center
 }
 
 form button:hover {
