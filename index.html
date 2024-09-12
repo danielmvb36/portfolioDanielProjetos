@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Portfólio - Nome do Estudante</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!--     
+<!--     botão (modo noturno) anterior desativado
     <div>
         <input type="checkbox" class="checkbox" id="chk" />
 
@@ -18,8 +19,6 @@
         </label>
     </div> -->
     
-    <script src = script.js>  </script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"> </script>
 
     <header>
         <div class="container">
@@ -32,9 +31,8 @@
                 </ul>
             </nav>
 
-            <div class="trocaCor">
-                <input type="checkbox" class="checkbox" id="trocarCor" />
-        
+            <div class="chk">
+                <input type="checkbox" class="checkbox" id="chk" />
                 <label class="label" for="chk">
                     <i class="fas fa-moon"></i>
                     <i class="fas fa-sun"></i>
@@ -42,12 +40,14 @@
                 </label>
             </div>
         </div>
+        <script src = script.js>  </script>
+        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"> </script>
     </header>
 
+    <div class="container">
+        <img id="imagem-grupo" src="./imagens/1-foto-grupo.jpg" alt="">
+    </div>
     <section id="sobre">
-        <div>
-            <img src="Habilidades-para-2021-perfil-DISC-descubra-como-atingir-o-sucesso.jpg" alt="" >
-        </div>
         <div class="container">
             <h2>Sobre Mim</h2>
             <p id="primeiro">Sou um estudante de Análise e Desenvolvimento de Sistemas. Tenho interesse em desenvolvimento web e programação. Este é o meu portfólio onde você pode conhecer mais sobre meus projetos e habilidades.</p>
