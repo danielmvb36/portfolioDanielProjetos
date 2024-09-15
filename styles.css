@@ -241,3 +241,26 @@ footer {
    margin-right: auto;
    margin-left: auto;
 }
+/* Hover de botões Os dois abaixo! */
+.botoes{
+    color: #fff;
+    width:150px;
+    height:150px;
+    transition: transform 0.6s ease-in-out;  
+    transition: box-shadow 0.2s ease-in-out;
+}
+.botoes:hover {
+    border: 10px solid rgb(167, 167, 167);
+    transform: scale(1.5); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display:flex;     
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
