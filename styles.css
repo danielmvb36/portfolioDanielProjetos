@@ -240,6 +240,7 @@ footer {
    display: block;
    margin-right: auto;
    margin-left: auto;
+   border-radius: 50%;
 }
 /* Hover de botões Os dois abaixo! */
 .botoes{
