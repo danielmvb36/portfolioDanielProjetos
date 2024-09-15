@@ -237,13 +237,14 @@ footer {
 #imagem-grupo {
     width: 20%;
     height: 20%;
-   display: block;
-   margin-right: auto;
-   margin-left: auto;
-   border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
 }
 /* Hover de botões Os dois abaixo! */
-.botoes{
+.botoes {
     color: #fff;
     width:150px;
     height:150px;
@@ -264,4 +265,22 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top:50px;
+}
+
+.container-projeto{
+    width: 100%;
+}
+
+/* Hover dos botões projeto */
+#botoes {
+    color: #fff;
+    width:auto;
+    height:auto;
+    transition: transform 0.6s ease-in-out;  
+    transition: box-shadow 0.2s ease-in-out;
+}
+#botoes:hover {
+    border: 10px solid rgb(224, 176, 176);
+    transform: scale(1); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
