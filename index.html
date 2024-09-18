@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Portfólio - Nome do Estudante</title>
     <link rel="stylesheet" href="styles.css">
+<!-- modal -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<!--     
+    <!--     botão (modo noturno) anterior desativado
     <div>
         <input type="checkbox" class="checkbox" id="chk" />
 
@@ -17,24 +22,20 @@
             <div class="ball"></div>
         </label>
     </div> -->
-    
-    <script src = script.js>  </script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"> </script>
 
     <header>
         <div class="container">
-            <h1>Daniel Balbi</h1>
+            <h1>Daniel Balbi || Programador</h1>
             <nav>
                 <ul>
-                    <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li class="botoes"><a href="#sobre">Sobre Mim</a></li>
+                    <li class="botoes"><a href="#projetos">Projetos</a></li>
+                    <li class="botoes"><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
 
-            <div class="trocaCor">
-                <input type="checkbox" class="checkbox" id="trocarCor" />
-        
+            <div class="chk">
+                <input type="checkbox" class="checkbox" id="chk" />
                 <label class="label" for="chk">
                     <i class="fas fa-moon"></i>
                     <i class="fas fa-sun"></i>
@@ -42,12 +43,14 @@
                 </label>
             </div>
         </div>
+        <script src = script.js>  </script>
+        <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"> </script>
     </header>
 
+    <div class="container">
+        <img id="imagem-grupo" src="./imagens/1-foto-grupo.jpg" alt="">
+    </div>
     <section id="sobre">
-        <div>
-            <img src="Habilidades-para-2021-perfil-DISC-descubra-como-atingir-o-sucesso.jpg" alt="" >
-        </div>
         <div class="container">
             <h2>Sobre Mim</h2>
             <p id="primeiro">Sou um estudante de Análise e Desenvolvimento de Sistemas. Tenho interesse em desenvolvimento web e programação. Este é o meu portfólio onde você pode conhecer mais sobre meus projetos e habilidades.</p>
@@ -55,23 +58,66 @@
     </section>
 
     <section id="projetos">
-        <div class="container">
+        <div class="container-projeto">
             <h2>Meus Projetos</h2>
             <div class="projeto">
                 <h3>Projeto 1</h3>
-                <p>Descrição breve do projeto 1. O que foi feito e quais tecnologias foram utilizadas.</p>
-            </div>
+                <button id="botoes" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">No projeto 1...</button>
+                        <!-- Declarando o tipo e detalhes do Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Aqui escrevemos o conteúdo do modal, como opções e detalhes da mensagem-->
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <!-- Corpo da mensagem -->
+                            <div class="modal-body">
+                                <p>Descrição breve do projeto 1.
+                                    <p>O que é o Lorem Ipsum? O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
+                                    Porque é que o usamos? É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica. Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de letras, ao contrário do uso de "Conteúdo aqui, conteúdo aqui", tornando-o texto legível. Muitas ferramentas de publicação electrónica e editores de páginas web usam actualmente o Lorem Ipsum como o modelo de texto usado por omissão, e uma pesquisa por "lorem ipsum" irá encontrar muitos websites ainda na sua infância. Várias versões têm evoluído ao longo dos anos, por vezes por acidente, por vezes propositadamente (como no caso do humor).
+                                    </p>
+                                    .</p>
+                            </div>
+                                <!-- O prompt da mensagem do Modal deverá estar aqui — é o rodapé do modal-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="projeto">
                 <h3>Projeto 2</h3>
-                <p>Descrição breve do projeto 2. O que foi feito e quais tecnologias foram utilizadas.</p>
+                    <button id="botoes" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sobre o Projeto 2...</button>
+                        <!-- Declarando o tipo e detalhes do Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Aqui escrevemos o conteúdo do modal, como opções e detalhes da mensagem-->
+                        <div class="modal-content">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <!-- Corpo da mensagem -->
+                            <div class="modal-body">
+                                <p>Descrição breve do projeto 2.
+                                    <p>O que é o Lorem Ipsum? O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, quando uma misturou os caracteres de um texto para criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas também o salto para a tipografia electrónica, mantendo-se essencialmente inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente com os programas de publicação como o Aldus PageMaker que incluem versões do Lorem Ipsum.
+                                    Porque é que o usamos? É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica. Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de letras, ao contrário do uso de "Conteúdo aqui, conteúdo aqui", tornando-o texto legível. Muitas ferramentas de publicação electrónica e editores de páginas web usam actualmente o Lorem Ipsum como o modelo de texto usado por omissão, e uma pesquisa por "lorem ipsum" irá encontrar muitos websites ainda na sua infância. Várias versões têm evoluído ao longo dos anos, por vezes por acidente, por vezes propositadamente (como no caso do humor).
+                                    </p>
+                                    .</p>
+                            </div>
+                                <!-- O prompt da mensagem do Modal deverá estar aqui — é o rodapé do modal-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- Adicione mais projetos conforme necessário -->
         </div>
     </section>
 
-    <section id="contato">
-        <div class="container">
-            <h2>Contato</h2>
+    <section id="contatoS">
+        <div class="container1">
+            <!-- <div class="container">
+                <p>Contato</p>
+            </div> -->
+            <h2 id="hContato">Contato</h2>
             <form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>

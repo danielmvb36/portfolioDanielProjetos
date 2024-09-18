@@ -11,7 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background: color #383737;
-    transition: background 0.2s linear;
+    transition: background 0.0s linear;
 }
 
 body.dark {
@@ -29,9 +29,43 @@ body.dark #projetos {
     color: rgb(168, 166, 166);
 }
 
+#sobre {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#projetos {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
+#contatoS {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+    background-color: #8a8888;
+}
+
+#hContato {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+}
+
 body.dark #contato {
     background: #232c35 ;
     color:  rgb(168, 166, 166);
+    text-align: center;
 }
 
 body.dark #nome {
@@ -66,6 +100,7 @@ body.dark #mensagem {
 
    transform: scale(1.5);
 }
+
 /* Bolinha branca dentro do label*/
 .label .ball {
    background-color: #ffffff;
@@ -95,10 +130,6 @@ header {
     background: #333;
     color: #ffffff;
     padding: 1rem 0;
-}
-
-.trocarCor {
-    
 }
 
 header .container {
@@ -146,13 +177,9 @@ h2 {
     padding-bottom: 10px;
     margin-bottom: 20px;
     text-shadow: 2px, 2px, 20px;
-    font-size: 5rem;
+    font-size: 45px;
     
 
-}
-
-#primeiro {
-    font-size: 50px;
 }
 
 .projeto {
@@ -201,4 +228,59 @@ footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #333;
+}
+
+#primeiro {
+    font-size: 20px;
+}
+
+#imagem-grupo {
+    width: 20%;
+    height: 20%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+}
+/* Hover de botões Os dois abaixo! */
+.botoes {
+    color: #fff;
+    width:150px;
+    height:150px;
+    transition: transform 0.6s ease-in-out;  
+    transition: box-shadow 0.2s ease-in-out;
+}
+.botoes:hover {
+    border: 10px solid rgb(167, 167, 167);
+    transform: scale(1.5); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display:flex;     
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.container-projeto{
+    width: 100%;
+}
+
+/* Hover dos botões projeto */
+#botoes {
+    color: #fff;
+    width:auto;
+    height:auto;
+    transition: transform 0.6s ease-in-out;  
+    transition: box-shadow 0.2s ease-in-out;
+}
+#botoes:hover {
+    border: 10px solid rgb(224, 176, 176);
+    transform: scale(1); 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
