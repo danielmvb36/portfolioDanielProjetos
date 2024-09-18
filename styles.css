@@ -21,7 +21,6 @@ body.dark {
 body.dark #sobre {
     background: #232c35 ;
     color:  rgb(168, 166, 166); 
-    
 }
 
 body.dark #projetos {
@@ -31,10 +30,10 @@ body.dark #projetos {
 
 #sobre {
     display: flex;
-    width: 50%;
+    width: auto;
     align-items: center;
     justify-content: center;
-    margin-left: 25%;
+    margin: 25%;
 }
 
 #projetos {
@@ -88,16 +87,14 @@ body.dark #mensagem {
  /*Label da caixinha para trocar entre o dark e light theme */
 .label {
    background-color: #3b3636;
-   border-radius: 50px;
    cursor: pointer;
    display: flex;
    align-items: center; 
    justify-content: space-between;
-   padding: 8px;
+   padding: 80px;
    position: relative;
    height: 10px;
    width: 60px;
-
    transform: scale(1.5);
 }
 
@@ -129,21 +126,22 @@ body.dark #mensagem {
 header {
     background: #333;
     color: #ffffff;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 header .container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     display:flex;
     justify-content: space-between;
     align-items: center;
 }
 
 header h1 {
+    height: 70%;
+    display: block;
     margin: 0;
     text-align: center;
-    
 }
 
 nav ul {
@@ -167,25 +165,16 @@ section {
     background-color:#ffffff
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 h2 {
     border-bottom: 2px solid #2e2b2b;
     padding-bottom: 10px;
     margin-bottom: 20px;
     text-shadow: 2px, 2px, 20px;
     font-size: 45px;
-    
-
 }
 
 .projeto {
     margin-bottom: 20px;
-
-    
 }
 
 form {
@@ -193,17 +182,10 @@ form {
     flex-direction: column;
 }
 
-form label {
-    margin-bottom: 5px;
-    
-    
-}
-
 form input, form textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
-    
 }
 
 form button {
@@ -216,10 +198,6 @@ form button {
     cursor: pointer;
     text-shadow: #333;
     display: center
-}
-
-form button:hover {
-    background: #333;;
 }
 
 footer {
@@ -245,20 +223,18 @@ footer {
 }
 /* Hover de botões Os dois abaixo! */
 .botoes {
-    color: #fff;
-    width:150px;
-    height:150px;
+    zoom: normal;
+    width:65px;
+    height:100px;
     transition: transform 0.6s ease-in-out;  
     transition: box-shadow 0.2s ease-in-out;
 }
 .botoes:hover {
-    border: 10px solid rgb(167, 167, 167);
     transform: scale(1.5); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
 
 .container{
-    width: 100%;
     height: auto;
     display:flex;     
     flex-wrap: wrap;
@@ -273,14 +249,12 @@ footer {
 
 /* Hover dos botões projeto */
 #botoes {
-    color: #fff;
     width:auto;
     height:auto;
     transition: transform 0.6s ease-in-out;  
     transition: box-shadow 0.2s ease-in-out;
 }
 #botoes:hover {
-    border: 10px solid rgb(224, 176, 176);
     transform: scale(1); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.6);
 }
