@@ -258,6 +258,7 @@ footer {
 .botoes:hover {
     transform: scale(1.5); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    
 }
 
 .container{
@@ -267,6 +268,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top:50px;
+    
 }
 
 .container-projeto{
@@ -286,6 +288,7 @@ footer {
 #botoes:hover {
     transform: scale(1); 
     box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    
 }
 
 .button-project {
@@ -293,3 +296,4 @@ footer {
     width: 50%;
     height: 200px;
 }
+
