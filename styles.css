@@ -33,7 +33,8 @@ body.dark #projetos {
     width: auto;
     align-items: center;
     justify-content: center;
-    margin: 25%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #projetos {
