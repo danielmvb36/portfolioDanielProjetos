@@ -280,8 +280,8 @@ footer {
 #botoes {
     width:auto;
     height:auto;
-    transition: transform 0.6s ease-in-out;  
-    transition: box-shadow 0.2s ease-in-out;
+    transition: transform 0.2s;  
+    transition: box-shadow 0.6s;
     width: 200px;
     justify-content: center;
     align-items: centers;
