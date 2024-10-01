@@ -208,8 +208,8 @@ form input, form textarea {
 input[type="submit"]{
     padding: 10px 8px;
     width: 65px; 
-    color: #f1f1f1;
-    background: #3b3636;
+    color: #800080;
+    background: #e2e2e2;
     border: 1px solid #555;
     border-radius: 5px;
     margin-left: auto;
@@ -222,7 +222,8 @@ input[type="submit"]{
     /* Hover do botão ENVIAR*/
 
  input[type="submit"]:hover{
-    background: #529dff;
+    color: white;
+    background: #800080;
     box-shadow: 2px 2px 8px rgb(34, 34, 34); 
     transition: 0.6s;
 }
