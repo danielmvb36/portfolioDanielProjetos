@@ -16,16 +16,19 @@ body {
 
 body.dark {
     background: #232c35 ;
+    transition: 0.6s;
 }
 
 body.dark #sobre {
     background: #232c35 ;
-    color:  rgb(168, 166, 166); 
+    color:  rgb(168, 166, 166);
+    transition: 0.6s; 
 }
 
 body.dark #projetos {
     background: #232c35 ;
     color: rgb(168, 166, 166);
+    transition: 0.6s;
 }
 
 #sobre {
@@ -87,14 +90,14 @@ body.dark #mensagem {
 
  /*Label da caixinha para trocar entre o dark e light theme */
 .label {
-   background-color: #3b3636;
+   background-color: #383737;
    cursor: pointer;
    display: flex;
    align-items: center; 
    justify-content: space-between;
    padding: 80px;
    position: relative;
-   height: 10px;
+   height: 15px;
    width: 60px;
    transform: scale(1.5);
 }
